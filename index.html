@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    #canvas{
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .painting{
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      background-color: black;
+      gap: 9px;
+    }
+
+    .red{
+      background-color: #E72F24;
+    }
+
+    .white{
+      background-color: #F0F1EC;
+    }
+
+
+    .one{
+      grid-column: 2 / 5;
+    }
+
+    .two{
+      grid-row: 2 / 4;
+    }
+
+    .three{
+      grid-area: 2 / 2 / 4 / 4;
+    }
+
+    .five{
+      grid-row: 3 / 5;
+    }
+
+    .blue{
+      background-color: #004592;
+      grid-area: 2 / 4 / 3 / 5;
+      border-bottom: solid black 10px;
+    }
+
+    .yellow{
+      background-color: #F9D01E;
+    }
+
+    .gray{
+      background-color: #232629;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="canvas">
+    <div class="painting">
+      <div class="red box"></div>
+      <div class="white box one"></div>
+      <div class="white box two"></div>
+      <div class="white box three"></div>
+      <div class="white box four"></div>
+      <div class="white box five"></div>
+      <div class="blue box"></div>
+      <div class="yellow box"></div>
+      <div class="gray box"></div>
+    </div>
+  </div>
+</body>
+
+</html>
